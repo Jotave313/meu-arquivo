@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numUm">
+    <input id="numDois">
+    <input disable id="result">
+</body>
+<button onclick="calcular()">calcular</button>
+<script>
+    function calcular() {
+    var x = parseFloat (document.getElementById("numUm").value);
+    var y = parseFloat (document.getElementById("numDois").value);
+    var result = x + y ;
+
+    document.getElementById("result").value = result;
+    } 
+    
+</script>
+</html>
